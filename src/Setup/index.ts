@@ -1,4 +1,4 @@
-import { Setup } from './Setup';
+import Setup from './Setup';
 
 export {
     Setup,
