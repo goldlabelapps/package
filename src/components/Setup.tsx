@@ -12,7 +12,9 @@ export const Setup = ({
 }: any) => {
   return (
     <>
-    pre
+    <p>
+      Setup
+    </p>
       <pre>...rest{JSON.stringify(rest, null, 2)}</pre>
     </>
   );
