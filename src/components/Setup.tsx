@@ -8,7 +8,7 @@ export type TSetup= React.ButtonHTMLAttributes<HTMLButtonElement> & {
 export const Setup = ({ 
   variant = 'primary', 
   children, 
-  ...rest,
+  ...rest
 }: any) => {
   return (
     <>

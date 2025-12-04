@@ -99,3 +99,5 @@ Verifying the publish
 ---------------------
 
 - After the workflow runs, check the Actions tab for the workflow run. If the `Publish package` step completed successfully, the package should be available on the npm registry at `https://www.npmjs.com/package/@goldlabelapps/core`.
+
+`npm publish --access public`
