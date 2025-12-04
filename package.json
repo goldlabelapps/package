@@ -1,0 +1,50 @@
+{
+  "name": "@goldlabelapps/package",
+  "version": "1.0.0",
+  "private": false,
+  "description": "GoldLabel npm package",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsup",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^6",
+    "typescript": "^5.2.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "rimraf": "^5.0.0"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goldlabelapps/package.git"
+  },
+  "homepage": "https://goldlabel.pro",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "tsup": {
+    "entry": ["src/index.ts"],
+    "format": ["cjs", "esm"],
+    "dts": true,
+    "clean": true
+  }
+}
