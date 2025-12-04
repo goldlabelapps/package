@@ -1,10 +1,13 @@
-## packag@goldlabelapps/package
+## @goldlabelapps/package
 
-> Shared UI components and cartridges for GoldLabel projects
+[npmjs.com](https://www.npmjs.com/package/@goldlabelapps/package)
 
-This package is a small, TypeScript-first component library intended to be used by the example Next app: https://github.com/javascript-pro/example-app
+> Small, TypeScript-first component library intended to be used by Shared UI components and cartridges in GoldLabel projects
 
 #### Quick start
+
+Wrap your app in the Setup component and configure your config
+
 ```
 import { Setup } from '@goldlabelapps/core'
 
