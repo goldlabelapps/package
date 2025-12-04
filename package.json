@@ -1,9 +1,10 @@
 {
   "name": "@goldlabelapps/package",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "GoldLabel NPM package",
   "scripts": {
+    "dev": "tsup --watch",
     "clean": "rimraf dist",
     "build": "tsup",
     "prepare": "npm run build",

@@ -1,4 +1,4 @@
-// /Users/goldlabel/GitHub/npm-core/src/components/Setup.tsx
+// /Users/goldlabel/GitHub/package/src/Setup/Setup.tsx
 import React from 'react';
 
 export type TSetup= React.ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -12,9 +12,9 @@ export const Setup = ({
 }: any) => {
   return (
     <>
-    <p>
-      Setup
-    </p>
+      <h1>
+        Setup
+      </h1>
       <pre>...rest{JSON.stringify(rest, null, 2)}</pre>
     </>
   );

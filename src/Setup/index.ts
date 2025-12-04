@@ -1,7 +1,7 @@
-// /Users/goldlabel/GitHub/package/src/index.ts
 import { Setup } from './Setup';
 
 export {
     Setup,
-};
+}
+
 

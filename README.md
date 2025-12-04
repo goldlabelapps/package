@@ -2,11 +2,11 @@
 
 [npmjs.com](https://www.npmjs.com/package/@goldlabelapps/package)
 
-> Small, TypeScript-first component library intended to be used by Shared UI components and cartridges in GoldLabel projects
+> TypeScript-first component library intended to be used by Shared UI components and cartridges in GoldLabel projects
 
 #### Quick start
 
-Wrap your app in the Setup component and configure your config
+Wrap your Next app in the Setup component and configure your config. We will be using Next's Node capability to create a `config.json`
 
 ```
 import { Setup } from '@goldlabelapps/core'
