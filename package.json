@@ -1,9 +1,9 @@
 {
   "name": "@goldlabelapps/package",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "description": "GoldLabel NPM package",
-  "keywords": ["next, react"],
+  "keywords": ["nextjs, react, goldlabel"],
   "scripts": {
     "dev": "tsup --watch",
     "clean": "rimraf dist",
