@@ -38,7 +38,7 @@ export default function Goldlabel({
 
   return (
           <>
-            <h1>Goldlabel</h1>
+            <h1>Goldlabel 3</h1>
             <pre>config: {JSON.stringify(config, null, 2)}</pre>
             {children}
           </>
