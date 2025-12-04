@@ -1,23 +1,52 @@
 // /Users/goldlabel/GitHub/package/src/Setup/Setup.tsx
-import React from 'react';
+'use client';
+import * as React from 'react';
+// import { TTheme, IDesignSystem, TFeedback } from './types';
+// import { ThemeProvider, CssBaseline } from '@mui/material';
+// import {
+//   useDesignSystem,
+//   useMUITheme,
+//   setFeedback,
+//   setDesignSystemKey,
+//   Feedback,
+//   PushButton,
+//   LoadingOverlay,
+//   Footer,
+// } from '../DesignSystem';
+// import { useDispatch, useSlice } from '../Uberedux';
 
-export type TSetup= React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant?: 'primary' | 'secondary';
-};
+export default function Setup({
+  theme,
+  children = null,
+}: any) {
+  // const newtheme = useMUITheme(theme as TTheme);
+  // const { feedbackTested } = useDesignSystem();
+  // const dispatch = useDispatch();
+  // const { version } = useSlice();
+  // React.useEffect(() => {
+  //   if (!feedbackTested) {
+  //     // const feedback: TFeedback = {
+  //     //   severity: 'success',
+  //     //   title: `v${version} booted OK`,
+  //     // };
+  //     // dispatch(setFeedback(feedback));
+  //     dispatch(setDesignSystemKey('feedbackTested', true));
+  //   }
+  // }, [dispatch, feedbackTested]);
 
-export const Setup = ({ 
-  variant = 'primary', 
-  children, 
-  ...rest
-}: any) => {
   return (
-    <>
-      <h1>
-        Setup
-      </h1>
-      <pre>...rest{JSON.stringify(rest, null, 2)}</pre>
-    </>
-  );
-};
 
-export default Setup;
+<>
+    Setup
+    {children}
+</>
+    // <ThemeProvider theme={newtheme}>
+    //   <CssBaseline />
+    //   <LoadingOverlay />
+    //   <Feedback />
+    //   {children}
+    //   <PushButton />
+    //   <Footer />
+    // </ThemeProvider>
+  );
+}
